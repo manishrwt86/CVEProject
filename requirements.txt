@@ -1,0 +1,12 @@
+requests
+python-dateutil
+tqdm
+pandas
+spacy
+sqlalchemy
+aiohttp
+beautifulsoup4
+pytest
+matplotlib
+transformers
+torch

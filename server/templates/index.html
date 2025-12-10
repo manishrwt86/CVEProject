@@ -1,0 +1,101 @@
+<!-- server/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CVE Browser</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      input,
+      button {
+        padding: 8px;
+        margin: 4px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      th {
+        background: #f4f4f4;
+      }
+      .toolbar {
+        margin-bottom: 10px;
+      }
+      .toolbar a {
+        margin-left: 8px;
+        text-decoration: none;
+      }
+      .toolbar a button {
+        cursor: pointer;
+      }
+      #title {
+        text-align: center;
+        background-color: cyan;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">G-19 CVE Browser</h1>
+    <div style="text-align: center">
+      <input id="vendorInput" placeholder="Search vendor (e.g. microsoft)" />
+      <input id="productInput" placeholder="Search product (e.g. openssl)" />
+      <button id="searchBtn">Search</button>
+      <button id="recentBtn">Recent CVEs</button>
+      <button id="topBtn">Top Products</button>
+      <button id="statsBtn">Stats</button>
+
+      <button id="modelBtn">Model Severity Analysis</button>
+      <button
+        id="impactCsvBtn"
+        onclick="window.location.href='/api/export/impact';"
+      >
+        Download Impact CSV
+      </button>
+
+      <button
+        id="attackCsvBtn"
+        onclick="window.location.href='/api/export/attack-vector';"
+      >
+        Download Attack Vector CSV
+      </button>
+    </div>
+    <div id="pngCharts" style="margin-top: 20px; display: none">
+      <h3>Saved Graphs (from offline advanced_analysis.py)</h3>
+      <img
+        id="imgMonthly"
+        src="/static/cve_monthly_counts.png"
+        alt="CVE monthly counts graph"
+        style="max-width: 100%; margin-bottom: 10px"
+      />
+      <img
+        id="imgSeverity"
+        src="/static/cve_severity_trend.png"
+        alt="CVE severity trend graph"
+        style="max-width: 100%"
+      />
+    </div>
+
+    <div id="results"></div>
+    <!-- dynamic charts (Chart.js) -->
+    <div id="charts" style="margin-top: 20px">
+      <canvas id="monthlyChart"></canvas>
+      <canvas id="severityChart"></canvas>
+      <canvas id="modelTrendChart"></canvas>
+      <!-- NEW -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
