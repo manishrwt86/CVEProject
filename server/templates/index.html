@@ -44,6 +44,60 @@
         padding: 10px;
       }
     </style>
+    <!-- Paste this just before </body> -->
+    <script>
+      console.log("INLINE findCVE script loaded");
+
+      // Guarantee a working Find CVE handler that does not depend on app.js
+      window.findCVE = async function () {
+        try {
+          console.log("findCVE() called");
+          const input = document.getElementById("cveInput");
+          if (!input) {
+            alert("CVE input element not found in DOM.");
+            console.error("findCVE: cveInput element missing");
+            return;
+          }
+          const id = input.value.trim();
+          if (!id) {
+            alert("Please enter a CVE ID (e.g. CVE-2025-12345)");
+            return;
+          }
+          console.log("Attempting to fetch CVE:", id);
+
+          const res = await fetch("/api/cve/" + encodeURIComponent(id));
+          console.log("Fetch returned status:", res.status);
+
+          if (res.status === 404) {
+            alert("CVE not found: " + id);
+            return;
+          }
+          if (!res.ok) {
+            const txt = await res.text().catch(() => "");
+            alert("Error fetching CVE: " + res.status + " — " + txt);
+            console.error("findCVE fetch error:", res.status, txt);
+            return;
+          }
+
+          const data = await res.json();
+          console.log("CVE data:", data);
+
+          const container = document.getElementById("results");
+          container.innerHTML = `<h3>${data.id}</h3>
+          <p><strong>Published:</strong> ${data.published || ""} 
+             <strong>CVSS:</strong> ${data.cvss_v3_score || ""}</p>
+          <p>${data.summary || ""}</p>
+          <pre>${JSON.stringify(data.raw || {}, null, 2)}</pre>`;
+
+          // make sure charts / png area are hidden (same behaviour as showCVE)
+          const png = document.getElementById("pngCharts");
+          if (png) png.style.display = "None";
+        } catch (err) {
+          console.error("findCVE unexpected error:", err);
+          alert("Unexpected error in findCVE: " + (err.message || err));
+        }
+      };
+    </script>
   </head>
   <body>
     <h1 id="title">G-19 CVE Browser</h1>
@@ -54,7 +108,6 @@
       <button id="recentBtn">Recent CVEs</button>
       <button id="topBtn">Top Products</button>
       <button id="statsBtn">Stats</button>
-
       <button id="modelBtn">Model Severity Analysis</button>
       <button
         id="impactCsvBtn"
@@ -70,6 +123,16 @@
         Download Attack Vector CSV
       </button>
     </div>
+
+    <div>
+      <input
+        id="cveInput"
+        placeholder="Enter CVE ID (e.g. CVE-2025-12345)"
+        style="width: 220px"
+      />
+      <button id="cveBtn" onclick="findCVE()">Find CVE</button>
+    </div>
+
     <div id="pngCharts" style="margin-top: 20px; display: none">
       <h3>Saved Graphs (from offline advanced_analysis.py)</h3>
       <img
