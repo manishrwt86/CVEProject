@@ -18,6 +18,11 @@
 6. Run sample NLP:
    python nlp_enrich_sample.py
 
+7. Run the app:
+   uvicorn server.main:app --reload --port 8000
+
+8. Open http://127.0.0.1:8000 in the browser to use the UI.
+
 # Project 2 – CVE Database + NLP + FastAPI UI
 
 **Student:** Pindiproli Naga Sai Anurag (LCI2022038), Adnan Akhtar (LCS2022001), Asitiva shrivasta (LCS2022004) ,Manish Rawat (LCS2022028) , Manjeet Kumar(LCS2022029)  
