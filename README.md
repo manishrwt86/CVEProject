@@ -45,10 +45,14 @@ CVE-NLP/
 │  ├─ db_access.py
 │  ├─ templates/index.html
 │  └─ static/app.js
-├─ fetch_nvd.py     # Fetch CVEs from NVD API
+├─ fetch_nvd.py
 ├─ parse_and_store.py
 ├─ nlp_enrich_sample.py
+├─ advanced_analysis.py
+├─ severity_model_demo.py
+├─ severity_eval.py
 └─ requirements.txt
+
 ```
 
 ## 2. Example Queries
