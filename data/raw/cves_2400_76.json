@@ -1,0 +1,4511 @@
+{
+  "resultsPerPage": 76,
+  "startIndex": 2400,
+  "totalResults": 2476,
+  "format": "NVD_CVE",
+  "version": "2.0",
+  "timestamp": "2025-12-10T10:27:58.777",
+  "vulnerabilities": [
+    {
+      "cve": {
+        "id": "CVE-2021-47728",
+        "sourceIdentifier": "disclosure@vulncheck.com",
+        "published": "2025-12-09T21:15:51.243",
+        "lastModified": "2025-12-09T21:15:51.243",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Selea Targa IP OCR-ANPR Camera contains an unauthenticated command injection vulnerability in utils.php that allows remote attackers to execute arbitrary shell commands. Attackers can exploit the 'addr' and 'port' parameters to inject commands and gain www-data user access through chained local file inclusion techniques."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "disclosure@vulncheck.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 9.3,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "HIGH",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "disclosure@vulncheck.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-78"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/zeroscience",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.exploit-db.com/exploits/49460",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.selea.com",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/selea-targa-ip-camera-remote-code-execution-via-utils",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2021-5620.php",
+            "source": "disclosure@vulncheck.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2021-47729",
+        "sourceIdentifier": "disclosure@vulncheck.com",
+        "published": "2025-12-09T21:15:51.400",
+        "lastModified": "2025-12-09T21:15:51.400",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Selea Targa IP OCR-ANPR Camera contains a stored cross-site scripting vulnerability in the 'files_list' parameter that allows attackers to inject malicious HTML and script code. Attackers can send a POST request to /cgi-bin/get_file.php with crafted payload to execute arbitrary scripts in victim's browser session."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "disclosure@vulncheck.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 5.1,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "LOW",
+                "userInteraction": "PASSIVE",
+                "vulnConfidentialityImpact": "LOW",
+                "vulnIntegrityImpact": "LOW",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "LOW",
+                "subIntegrityImpact": "LOW",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "disclosure@vulncheck.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-79"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.exploit-db.com/exploits/49454",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.selea.com",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.selea.com/product/",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/selea-targa-ip-camera-stored-cross-site-scripting-via-files-list",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2021-5614.php",
+            "source": "disclosure@vulncheck.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2021-47730",
+        "sourceIdentifier": "disclosure@vulncheck.com",
+        "published": "2025-12-09T21:15:51.550",
+        "lastModified": "2025-12-09T21:15:51.550",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Selea Targa IP OCR-ANPR Camera contains a cross-site request forgery vulnerability that allows attackers to create administrative users without authentication. Attackers can craft a malicious web page that submits a form to add a new admin user with full system privileges when a logged-in user visits the page."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "disclosure@vulncheck.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 8.5,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "ACTIVE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "disclosure@vulncheck.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-798"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/zeroscience",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.exploit-db.com/exploits/49458",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.selea.com",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/selea-targa-ip-camera-cross-site-request-forgery-via-admin-creation",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2021-5618.php",
+            "source": "disclosure@vulncheck.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2021-47731",
+        "sourceIdentifier": "disclosure@vulncheck.com",
+        "published": "2025-12-09T21:15:51.707",
+        "lastModified": "2025-12-09T21:15:51.707",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Selea Targa IP OCR-ANPR Camera contains a hard-coded developer password vulnerability that allows unauthorized configuration access through an undocumented page. Attackers can exploit the hidden endpoint by using the hard-coded password 'Selea781830' to enable configuration upload and overwrite device settings."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "disclosure@vulncheck.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 9.3,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "HIGH",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "disclosure@vulncheck.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-306"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/zeroscience",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.exploit-db.com/exploits/49455",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.selea.com",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/selea-targa-ip-camera-developer-backdoor-configuration-overwrite",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2021-5615.php",
+            "source": "disclosure@vulncheck.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2023-53739",
+        "sourceIdentifier": "disclosure@vulncheck.com",
+        "published": "2025-12-09T21:15:51.897",
+        "lastModified": "2025-12-09T21:15:51.897",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Tinycontrol LAN Controller v3 LK3 version 1.58a contains an unauthenticated vulnerability that allows remote attackers to download configuration backup files containing sensitive credentials. Attackers can retrieve the lk3_settings.bin file and extract base64-encoded user and admin passwords without authentication."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "disclosure@vulncheck.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 9.9,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "HIGH",
+                "subIntegrityImpact": "HIGH",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "disclosure@vulncheck.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-260"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.exploit-db.com/exploits/51731",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.tinycontrol.pl",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/tinycontrol-lan-controller-v-lk-a-unauthenticated-configuration-backup-disclosure",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2023-5786.php",
+            "source": "disclosure@vulncheck.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2023-53770",
+        "sourceIdentifier": "disclosure@vulncheck.com",
+        "published": "2025-12-09T21:15:52.150",
+        "lastModified": "2025-12-09T21:15:52.150",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "MiniDVBLinux 5.4 contains an unauthenticated configuration download vulnerability that allows remote attackers to access sensitive system configuration files through a direct object reference. Attackers can exploit the backup download endpoint by sending a GET request with 'action=getconfig' to retrieve a complete system configuration archive containing sensitive credentials."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "disclosure@vulncheck.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 8.7,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "NONE",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "disclosure@vulncheck.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-260"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.exploit-db.com/exploits/51091",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.minidvblinux.de",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/minidvblinux-unauthenticated-configuration-download-via-backup-endpoint",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2022-5713.php",
+            "source": "disclosure@vulncheck.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2023-53771",
+        "sourceIdentifier": "disclosure@vulncheck.com",
+        "published": "2025-12-09T21:15:52.310",
+        "lastModified": "2025-12-09T21:15:52.310",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "MiniDVBLinux 5.4 contains an authentication bypass vulnerability that allows remote attackers to change the root password without authentication. Attackers can send crafted POST requests to the system setup endpoint with modified SYSTEM_PASSWORD parameters to reset root credentials."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "disclosure@vulncheck.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 9.3,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "disclosure@vulncheck.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-306"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.exploit-db.com/exploits/51094",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.minidvblinux.de",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/minidvblinux-unauthenticated-root-password-change-via-system-setup",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2022-5715.php",
+            "source": "disclosure@vulncheck.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2023-53772",
+        "sourceIdentifier": "disclosure@vulncheck.com",
+        "published": "2025-12-09T21:15:52.470",
+        "lastModified": "2025-12-09T21:15:52.470",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "MiniDVBLinux 5.4 contains an arbitrary file disclosure vulnerability that allows attackers to read sensitive system files through the 'file' GET parameter. Attackers can exploit the about page by supplying file paths to disclose arbitrary file contents on the affected device."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "disclosure@vulncheck.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 8.7,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "NONE",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "disclosure@vulncheck.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-22"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.exploit-db.com/exploits/51097",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.minidvblinux.de",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/minidvblinux-arbitrary-file-read-vulnerability-via-about-page",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2022-5719.php",
+            "source": "disclosure@vulncheck.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2023-53773",
+        "sourceIdentifier": "disclosure@vulncheck.com",
+        "published": "2025-12-09T21:15:52.620",
+        "lastModified": "2025-12-09T21:15:52.620",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "MiniDVBLinux 5.4 contains an unauthenticated vulnerability in the tv_action.sh script that allows remote attackers to generate live stream snapshots through the Simple VDR Protocol. Attackers can request /tpl/tv_action.sh to create and retrieve a live TV screenshot stored in /var/www/images/tv.jpg without authentication."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "disclosure@vulncheck.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 8.7,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "NONE",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "disclosure@vulncheck.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-306"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.exploit-db.com/exploits/51095",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.minidvblinux.de",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/minidvblinux-unauthenticated-live-stream-disclosure-via-tvactionsh",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2022-5716.php",
+            "source": "disclosure@vulncheck.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2023-53774",
+        "sourceIdentifier": "disclosure@vulncheck.com",
+        "published": "2025-12-09T21:15:52.780",
+        "lastModified": "2025-12-09T21:15:52.780",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "MiniDVBLinux 5.4 contains a remote code execution vulnerability in the SVDRP protocol that allows remote attackers to send commands to manipulate TV systems. Attackers can send crafted SVDRP commands through the svdrpsend.sh script to execute messages and potentially control the video disk recorder remotely."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "disclosure@vulncheck.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 6.9,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "LOW",
+                "vulnIntegrityImpact": "LOW",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "disclosure@vulncheck.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-306"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.exploit-db.com/exploits/51093",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.linuxtv.org/vdrwiki/index.php/SVDRP#The_commands",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.minidvblinux.de",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/minidvblinux-simple-videodiskrecorder-protocol-remote-code-execution",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2022-5714.php",
+            "source": "disclosure@vulncheck.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-13743",
+        "sourceIdentifier": "security@docker.com",
+        "published": "2025-12-09T21:15:53.500",
+        "lastModified": "2025-12-09T21:15:53.500",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Docker Desktop diagnostics bundles were found to include expired Hub PATs in log output due to error object serialization. This poses a risk of leaking sensitive information in exported diagnostics, especially when access denied errors occurred."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "security@docker.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 2.4,
+                "baseSeverity": "LOW",
+                "attackVector": "LOCAL",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "LOW",
+                "userInteraction": "PASSIVE",
+                "vulnConfidentialityImpact": "LOW",
+                "vulnIntegrityImpact": "NONE",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security@docker.com",
+            "type": "Secondary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-532"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://docs.docker.com/desktop/troubleshoot-and-support/troubleshoot/#troubleshoot-menu",
+            "source": "security@docker.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-64785",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-09T21:15:58.940",
+        "lastModified": "2025-12-09T21:15:58.940",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Acrobat Reader versions 24.001.30264, 20.005.30793, 25.001.20982, 24.001.30273, 20.005.30803 and earlier are affected by an Untrusted Search Path vulnerability that might allow attackers to execute arbitrary code in the context of the current user. If the application uses a search path to locate critical resources such as programs, an attacker could modify that search path to point to a malicious program, which the targeted application would then execute. Exploitation of this issue does not require user interaction."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "baseScore": 7.8,
+                "baseSeverity": "HIGH",
+                "attackVector": "LOCAL",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "REQUIRED",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 1.8,
+              "impactScore": 5.9
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-426"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/acrobat/apsb25-119.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-64786",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-09T21:15:59.133",
+        "lastModified": "2025-12-09T21:15:59.133",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Acrobat Reader versions 24.001.30264, 20.005.30793, 25.001.20982, 24.001.30273, 20.005.30803 and earlier are affected by an Improper Verification of Cryptographic Signature vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to gain limited unauthorized write access. Exploitation of this issue does not require user interaction."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+                "baseScore": 3.3,
+                "baseSeverity": "LOW",
+                "attackVector": "LOCAL",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "REQUIRED",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "LOW",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 1.8,
+              "impactScore": 1.4
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-347"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/acrobat/apsb25-119.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-64787",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-09T21:15:59.337",
+        "lastModified": "2025-12-09T21:15:59.337",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Acrobat Reader versions 24.001.30264, 20.005.30793, 25.001.20982, 24.001.30273, 20.005.30803 and earlier are affected by an Improper Verification of Cryptographic Signature vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass cryptographic protections and gain limited unauthorized write access. Exploitation of this issue does not require user interaction."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+                "baseScore": 3.3,
+                "baseSeverity": "LOW",
+                "attackVector": "LOCAL",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "REQUIRED",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "LOW",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 1.8,
+              "impactScore": 1.4
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-347"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/acrobat/apsb25-119.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-64896",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-09T21:15:59.540",
+        "lastModified": "2025-12-09T21:15:59.540",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Creative Cloud Desktop versions 6.4.0.361 and earlier are affected by a Creation of Temporary File in Directory with Incorrect Permissions vulnerability that could lead to application denial-of-service. An attacker could exploit this vulnerability to disrupt the application's functionality by manipulating temporary files. Exploitation of this issue requires user interaction in that a victim must open a malicious file."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                "baseScore": 5.5,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "LOCAL",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "REQUIRED",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 1.8,
+              "impactScore": 3.6
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-379"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/creative-cloud/apsb25-120.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-64899",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-09T21:15:59.737",
+        "lastModified": "2025-12-09T21:15:59.737",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Acrobat Reader versions 24.001.30264, 20.005.30793, 25.001.20982, 24.001.30273, 20.005.30803 and earlier are affected by an out-of-bounds read vulnerability when parsing a crafted file, which could result in a read past the end of an allocated memory structure. An attacker could leverage this vulnerability to execute code in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "baseScore": 7.8,
+                "baseSeverity": "HIGH",
+                "attackVector": "LOCAL",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "REQUIRED",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 1.8,
+              "impactScore": 5.9
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-125"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/acrobat/apsb25-119.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-66626",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-09T21:16:00.150",
+        "lastModified": "2025-12-09T21:16:00.150",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. Versions 3.6.13 and below and versions 3.7.0 through 3.7.4, contain unsafe untar code that handles symbolic links in archives. Concretely, the computation of a link's target and the subsequent check are flawed. An attacker can overwrite the file /var/run/argo/argoexec with a script of their choice, which would be executed at the pod's start. The patch deployed against CVE-2025-62156 is ineffective against malicious archives containing symbolic links. This issue is fixed in versions 3.6.14 and 3.7.5."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+                "baseScore": 8.1,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "LOW",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 2.8,
+              "impactScore": 5.2
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-23"
+              },
+              {
+                "lang": "en",
+                "value": "CWE-78"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/advisories/GHSA-p84v-gxvw-73pf",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/argoproj/argo-workflows/blob/5291e0b01f94ba864f96f795bb500f2cfc5ad799/workflow/executor/executor.go#L1034-L1037",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/argoproj/argo-workflows/commit/6b92af23f35aed4d4de8b04adcaf19d68f006de1",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/argoproj/argo-workflows/security/advisories/GHSA-xrqc-7xgx-c9vh",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67488",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-09T21:16:00.317",
+        "lastModified": "2025-12-09T21:16:00.317",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "SiYuan is self-hosted, open source personal knowledge management software. Versions 0.0.0-20251202123337-6ef83b42c7ce and below contain function importZipMd which is vulnerable to ZipSlips, allowing an authenticated user to overwrite files on the system. An authenticated user with access to the import functionality in notes is able to overwrite any file on the system, and can escalate to full code execution under some circumstances. A fix is planned for version 3.5.0."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "baseScore": 7.8,
+                "baseSeverity": "HIGH",
+                "attackVector": "LOCAL",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "REQUIRED",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 1.8,
+              "impactScore": 5.9
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-22"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/siyuan-note/siyuan/blob/dae6158860cc704e353454565c96e874278c6f47/kernel/api/import.go#L190",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-gqfv-g4v7-m366",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67489",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-09T21:16:00.497",
+        "lastModified": "2025-12-09T21:16:00.497",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "@vitejs/plugin-rs provides React Server Components (RSC) support for Vite. Versions 0.5.5 and below are vulnerable to arbitrary remote code execution on the development server through unsafe dynamic imports in server function APIs (loadServerAction, decodeReply, decodeAction) when integrated into RSC applications that expose server function endpoints. Attackers with network access to the development server can read/modify files, exfiltrate sensitive data (source code, environment variables, credentials), or pivot to other internal services. While this affects development servers only, the risk increases when using vite --host to expose the server on all network interfaces. This issue is fixed in version 0.5.6."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "baseScore": 9.8,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 3.9,
+              "impactScore": 5.9
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-94"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/vitejs/vite-plugin-react/commit/fe634b58210d0a4a146a7faae56cd71af3bb9af4",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/vitejs/vite-plugin-react/security/advisories/GHSA-j76j-5p5g-9wfr",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-34425",
+        "sourceIdentifier": "disclosure@vulncheck.com",
+        "published": "2025-12-09T22:16:09.893",
+        "lastModified": "2025-12-09T22:16:09.893",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "MailEnable versions prior to 10.54 contain a reflected cross-site scripting (XSS) vulnerability in the WindowContext parameter of /Mondo/lang/sys/Forms/MAI/compose.aspx. The WindowContext value is not properly sanitized when processed via a GET request and is reflected within a <script> context in the JavaScript variable window.location, allowing an attacker to break out of the existing script and inject arbitrary JavaScript. A remote attacker can supply a crafted payload that terminates the existing ProcessContextSwitchResult() function, inserts attacker-controlled script, and comments out remaining code, leading to script execution in a victim’s browser when the victim visits a malicious link or attempts to send an email. Successful exploitation can redirect victims to malicious sites, steal non-HttpOnly cookies, inject arbitrary HTML or CSS, and perform actions as the authenticated user."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "disclosure@vulncheck.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 5.3,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "PASSIVE",
+                "vulnConfidentialityImpact": "LOW",
+                "vulnIntegrityImpact": "LOW",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "LOW",
+                "subIntegrityImpact": "LOW",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "disclosure@vulncheck.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-79"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://mailenable.com/Standard-ReleaseNotes.txt",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.mailenable.com/",
+            "source": "disclosure@vulncheck.com"
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/mailenable-reflected-xss-in-windowscontext-parameter-of-mai-compose-aspx",
+            "source": "disclosure@vulncheck.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-36437",
+        "sourceIdentifier": "psirt@us.ibm.com",
+        "published": "2025-12-09T22:16:10.070",
+        "lastModified": "2025-12-09T22:16:10.070",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "IBM Planning Analytics Local 2.1.0 - 2.1.15 could disclose sensitive information about server architecture that could aid in further attacks against the system."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@us.ibm.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+                "baseScore": 4.3,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "LOW",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "LOW",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 2.8,
+              "impactScore": 1.4
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@us.ibm.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-209"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.ibm.com/support/pages/node/7253603",
+            "source": "psirt@us.ibm.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-65513",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "2025-12-09T22:16:15.610",
+        "lastModified": "2025-12-09T22:16:15.610",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "fetch-mcp v1.0.2 and before is vulnerable to Server-Side Request Forgery (SSRF) vulnerability, which allows attackers to bypass private IP validation and access internal network resources."
+          }
+        ],
+        "metrics": {},
+        "references": [
+          {
+            "url": "https://github.com/Team-Off-course/MCP-Server-Vuln-Analysis/blob/main/CVE-2025-65513.md",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://thorn-pheasant-6d8.notion.site/fetch-mcp-2853daf7b44180029ca5d56e03195736",
+            "source": "cve@mitre.org"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-66039",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-09T22:16:15.757",
+        "lastModified": "2025-12-09T22:16:15.757",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "FreePBX Endpoint Manager is a module for managing telephony endpoints in FreePBX systems. Versions are vulnerable to authentication bypass when the authentication type is set to \"webserver.\" When providing an Authorization header with an arbitrary value, a session is associated with the target user regardless of valid credentials. This issue is fixed in versions 16.0.44 and 17.0.23."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 9.3,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "HIGH",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-287"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/FreePBX/framework/commit/04224253156543cd9932b90458660b2f19fc0e35#diff-72f14a52840a61504a8e03cd195035b44e488aecd634b001bc6412a04bdc940bR20-R50",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/FreePBX/security-reporting/security/advisories/GHSA-9jvh-mv6x-w698",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://www.freepbx.org/watch-what-we-do-with-security-fixes-%f0%9f%91%80",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-66645",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-09T22:16:15.930",
+        "lastModified": "2025-12-09T22:16:15.930",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "NiceGUI is a Python-based UI framework. Versions 3.3.1 and below are vulnerable to  directory traversal through the App.add_media_files() function, which allows a remote attacker to read arbitrary files on the server filesystem. This issue is fixed in version 3.4.0."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                "baseScore": 7.5,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 3.9,
+              "impactScore": 3.6
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-22"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/zauberzeug/nicegui/commit/a1b89e2a24e1911a40389ace2153a37f4eea92a9",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/zauberzeug/nicegui/security/advisories/GHSA-hxp3-63hc-5366",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67494",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-09T22:16:16.187",
+        "lastModified": "2025-12-09T22:16:16.187",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ZITADEL is an open-source identity infrastructure tool. Versions 4.7.0 and below are vulnerable to an unauthenticated, full-read SSRF vulnerability. The ZITADEL Login UI (V2) treats the x-zitadel-forward-host header as a trusted fallback for all deployments, including self-hosted instances. This allows an unauthenticated attacker to force the server to make HTTP requests to arbitrary domains, such as internal addresses, and read the responses, enabling data exfiltration and bypassing network-segmentation controls. This issue is fixed in version 4.7.1."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N",
+                "baseScore": 9.3,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "CHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "LOW",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 3.9,
+              "impactScore": 4.7
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-918"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/zitadel/zitadel/commit/4c879b47334e01d4fcab921ac1b44eda39acdb96",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/zitadel/zitadel/security/advisories/GHSA-7wfc-4796-gmg5",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-13760",
+        "sourceIdentifier": "cve@gitlab.com",
+        "published": "2025-12-09T23:15:47.170",
+        "lastModified": "2025-12-09T23:15:47.170",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority."
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67495",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-09T23:15:59.933",
+        "lastModified": "2025-12-09T23:15:59.933",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ZITADEL is an open-source identity infrastructure tool. Versions 4.0.0-rc.1 through 4.7.0 are vulnerable to DOM-Based XSS through the Zitadel V2 logout endpoint. The /logout endpoint insecurely routes to a value that is supplied in the post_logout_redirect GET parameter. As a result, unauthenticated remote attacker can execute malicious JS code on Zitadel users’ browsers. To carry out an attack, multiple user sessions need to be active in the same browser, however, account takeover is mitigated  when using Multi-Factor Authentication (MFA) or Passwordless authentication. This issue is fixed in version 4.7.1."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N",
+                "baseScore": 8.0,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "HIGH",
+                "privilegesRequired": "NONE",
+                "userInteraction": "REQUIRED",
+                "scope": "CHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 1.6,
+              "impactScore": 5.8
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-79"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/zitadel/zitadel/commit/4c879b47334e01d4fcab921ac1b44eda39acdb96",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/zitadel/zitadel/security/advisories/GHSA-v959-qxv6-6f8p",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67496",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-09T23:16:00.110",
+        "lastModified": "2025-12-09T23:16:00.110",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "WeGIA is an open source Web Manager for Institutions with a focus on Portuguese language users. Versions 3.5.4 and below contain a Stored Cross-Site Scripting (XSS) vulnerability in the /WeGIA/html/geral/configurar_senhas.php endpoint. The application does not sanitize user-controlled data before rendering it inside the employee selection dropdown. The application retrieves employee names from the database and injects them directly into HTML <option> elements without proper escaping. This issue is fixed in version 3.5.5."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+                "baseScore": 4.3,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "LOW",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "LOW",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 2.8,
+              "impactScore": 1.4
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-79"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/LabRedesCefetRJ/WeGIA/commit/c80b8cacd310fd459df61c030fb267c5e68cafc7",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/LabRedesCefetRJ/WeGIA/releases/tag/3.5.5",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/LabRedesCefetRJ/WeGIA/security/advisories/GHSA-9843-qm67-73h2",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67497",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-09T23:16:00.287",
+        "lastModified": "2025-12-09T23:16:00.287",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: Further research determined the issue is not a vulnerability."
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67498",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-09T23:16:00.343",
+        "lastModified": "2025-12-09T23:16:00.343",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: Further research determined the issue is not a vulnerability."
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-61808",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-10T00:16:09.087",
+        "lastModified": "2025-12-10T00:16:09.087",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ColdFusion versions 2025.4, 2023.16, 2021.22 and earlier are affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could lead to arbitrary code execution by a high priviledged attacker. Exploitation of this issue does not require user interaction and scope is changed."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+                "baseScore": 9.1,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "HIGH",
+                "userInteraction": "NONE",
+                "scope": "CHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 2.3,
+              "impactScore": 6.0
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-434"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/coldfusion/apsb25-105.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-61809",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-10T00:16:09.273",
+        "lastModified": "2025-12-10T00:16:09.273",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ColdFusion versions 2025.4, 2023.16, 2021.22 and earlier are affected by an Improper Input Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measures and gain unauthorized read and write access. Exploitation of this issue does not require user interaction and scope is unchanged."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+                "baseScore": 9.1,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 3.9,
+              "impactScore": 5.2
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-20"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/coldfusion/apsb25-105.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-61810",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-10T00:16:09.453",
+        "lastModified": "2025-12-10T00:16:09.453",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ColdFusion versions 2025.4, 2023.16, 2021.22 and earlier are affected by a Deserialization of Untrusted Data vulnerability that could result in arbitrary code execution in the context of the current user. A high privileged attacker could exploit this vulnerability by providing maliciously crafted serialized data to the application. Exploitation of this issue requires user interaction and scope is changed."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+                "baseScore": 8.4,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "HIGH",
+                "userInteraction": "REQUIRED",
+                "scope": "CHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 1.7,
+              "impactScore": 6.0
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-502"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/coldfusion/apsb25-105.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-61811",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-10T00:16:09.640",
+        "lastModified": "2025-12-10T00:16:09.640",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ColdFusion versions 2025.4, 2023.16, 2021.22 and earlier are affected by an Improper Access Control vulnerability that could result in arbitrary code execution in the context of the current user. A high privileged attacker could leverage this vulnerability to bypass security measures and execute malicious code. Exploitation of this issue does not require user interaction and scope is changed."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+                "baseScore": 8.4,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "HIGH",
+                "userInteraction": "REQUIRED",
+                "scope": "CHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 1.7,
+              "impactScore": 6.0
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-284"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/coldfusion/apsb25-105.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-61812",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-10T00:16:09.817",
+        "lastModified": "2025-12-10T00:16:09.817",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ColdFusion versions 2025.4, 2023.16, 2021.22 and earlier are affected by an Improper Input Validation vulnerability that could allow a high privileged attacker to gain arbitrary code execution. Exploitation of this issue does not require user interaction."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:A/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+                "baseScore": 8.4,
+                "baseSeverity": "HIGH",
+                "attackVector": "ADJACENT_NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "HIGH",
+                "userInteraction": "NONE",
+                "scope": "CHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 1.7,
+              "impactScore": 6.0
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-20"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/coldfusion/apsb25-105.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-61813",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-10T00:16:09.990",
+        "lastModified": "2025-12-10T00:16:09.990",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ColdFusion versions 2025.4, 2023.16, 2021.22 and earlier are affected by an Improper Restriction of XML External Entity Reference ('XXE') vulnerability that could lead to arbitrary file system read. An attacker could exploit this vulnerability to access sensitive files on the server. Exploitation of this issue does not require user interaction and scope is changed."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:L",
+                "baseScore": 8.2,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "REQUIRED",
+                "scope": "CHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "LOW"
+              },
+              "exploitabilityScore": 2.8,
+              "impactScore": 4.7
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-611"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/coldfusion/apsb25-105.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-61821",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-10T00:16:10.163",
+        "lastModified": "2025-12-10T00:16:10.163",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ColdFusion versions 2025.4, 2023.16, 2021.22 and earlier are affected by an Improper Restriction of XML External Entity Reference ('XXE') vulnerability that could lead to arbitrary file system read. An attacker could exploit this vulnerability to access sensitive files and data on the server. Exploitation of this issue does not require user interaction and scope is changed."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+                "baseScore": 6.8,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "HIGH",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "CHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 2.2,
+              "impactScore": 4.0
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-611"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/coldfusion/apsb25-105.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-61822",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-10T00:16:10.340",
+        "lastModified": "2025-12-10T00:16:10.340",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ColdFusion versions 2025.4, 2023.16, 2021.22 and earlier are affected by an Improper Input Validation vulnerability that could lead to arbitrary file system write. An attacker could exploit this vulnerability to write malicious files to arbitrary locations on the file system. Exploitation of this issue does not require user interaction and scope is changed."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:A/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+                "baseScore": 6.2,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "ADJACENT_NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "HIGH",
+                "userInteraction": "NONE",
+                "scope": "CHANGED",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 1.7,
+              "impactScore": 4.0
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-20"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/coldfusion/apsb25-105.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-61823",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-10T00:16:10.527",
+        "lastModified": "2025-12-10T00:16:10.527",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ColdFusion versions 2025.4, 2023.16, 2021.22 and earlier are affected by an Improper Restriction of XML External Entity Reference ('XXE') vulnerability that could lead to arbitrary file system read. A high privileged attacker could exploit this vulnerability to access sensitive files and data on the server. Exploitation of this issue requires user interaction and scope is changed."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:N/A:N",
+                "baseScore": 6.2,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "HIGH",
+                "userInteraction": "REQUIRED",
+                "scope": "CHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 1.7,
+              "impactScore": 4.0
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-611"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/coldfusion/apsb25-105.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-64897",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-10T00:16:10.767",
+        "lastModified": "2025-12-10T00:16:10.767",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ColdFusion versions 2025.4, 2023.16, 2021.22 and earlier are affected by an Improper Access Control vulnerability. A low privileged attacker could leverage this vulnerability to bypass security measures and gain limited unauthorized write access potentially resulting in denial of service. Exploitation of this issue requires user interaction."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:H",
+                "baseScore": 5.6,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "LOCAL",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "LOW",
+                "userInteraction": "REQUIRED",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "LOW",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 1.3,
+              "impactScore": 4.2
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-284"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/coldfusion/apsb25-105.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-64898",
+        "sourceIdentifier": "psirt@adobe.com",
+        "published": "2025-12-10T00:16:10.937",
+        "lastModified": "2025-12-10T00:16:10.937",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ColdFusion versions 2025.4, 2023.16, 2021.22 and earlier are affected by an Insufficiently Protected Credentials vulnerability that could result in limited unauthorized write access. An attacker could leverage this vulnerability to gain unauthorized access by exploiting improperly stored or transmitted credentials. Exploitation of this issue does not require user interaction."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "psirt@adobe.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+                "baseScore": 4.3,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "REQUIRED",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "LOW",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 2.8,
+              "impactScore": 1.4
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@adobe.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-522"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://helpx.adobe.com/security/products/coldfusion/apsb25-105.html",
+            "source": "psirt@adobe.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67499",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-10T00:16:11.107",
+        "lastModified": "2025-12-10T00:16:11.107",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The CNI portmap plugin allows containers to emulate opening a host port, forwarding that traffic to the container. Versions 1.6.0 through 1.8.0  inadvertently forward all traffic with the same destination port as the host port when the portmap plugin is configured with the nftables backend, thus ignoring the destination IP. This includes traffic not intended for the node itself, i.e. traffic to containers hosted on the node. Containers that request HostPort forwarding can intercept all traffic destined for that port. This requires that the portmap plugin be explicitly configured to use the nftables backend. This issue is fixed in version 1.9.0. To workaround, configure the portmap plugin to use the iptables backend. It does not have this vulnerability."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:H",
+                "baseScore": 6.6,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "LOCAL",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "LOW",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "LOW",
+                "integrityImpact": "LOW",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 1.8,
+              "impactScore": 4.7
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-200"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/containernetworking/plugins/pull/1210",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/containernetworking/plugins/releases/tag/v1.9.0",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/containernetworking/plugins/security/advisories/GHSA-jv3w-x3r3-g6rm",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67500",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-10T00:16:11.270",
+        "lastModified": "2025-12-10T00:16:11.270",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Mastodon is a free, open-source social network server based on ActivityPub. Versions 4.2.27 and prior, 4.3.0-beta.1 through 4.3.14, 4.4.0-beta.1 through 4.4.9, 4.5.0-beta.1 through 4.5.2 have discrepancies in error handling which allow checking whether a given status exists by sending a request with a non-English Accept-Language header. Using this behavior, an attacker who knows the identifier of a particular status they are not allowed to see can confirm whether this status exists or not. This cannot be used to learn the contents of the status or any other property besides its existence. This issue is fixed in versions 4.2.28, 4.3.15, 4.4.10 and 4.5.3."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                "baseScore": 3.7,
+                "baseSeverity": "LOW",
+                "attackVector": "NETWORK",
+                "attackComplexity": "HIGH",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "LOW",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 2.2,
+              "impactScore": 1.4
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-204"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/mastodon/mastodon/pull/37077/commits/9957d3218cb33fea6a44bb285e2ba4795a059e4f",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/mastodon/mastodon/security/advisories/GHSA-gwhw-gcjx-72v8",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67501",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-10T00:16:11.433",
+        "lastModified": "2025-12-10T00:16:11.433",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "WeGIA is an open source Web Manager for Institutions with a focus on Portuguese language users. Versions 3.5.4 and below contain an SQL Injection vulnerability in the /html/matPat/editar_categoria.php endpoint. The application fails to properly validate and sanitize user inputs in the id_categoria parameter, which allows attackers to inject malicious SQL payloads for direct execution. This issue is fixed in version 3.5.5."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 9.4,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "HIGH",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "HIGH",
+                "subConfidentialityImpact": "HIGH",
+                "subIntegrityImpact": "HIGH",
+                "subAvailabilityImpact": "HIGH",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-89"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/LabRedesCefetRJ/WeGIA/commit/f04b91f584a38c2061a071b26219dba3f25819e6",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/LabRedesCefetRJ/WeGIA/releases/tag/3.5.5",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/LabRedesCefetRJ/WeGIA/security/advisories/GHSA-hj2x-qfm3-2869",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67502",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-10T00:16:11.600",
+        "lastModified": "2025-12-10T00:16:11.600",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Taguette is an open source qualitative research tool. In versions 1.5.1 and below,  attackers can craft malicious URLs that redirect users to arbitrary external websites after authentication. The application accepts a user-controlled next parameter and uses it directly in HTTP redirects without any validation. This can be exploited for phishing attacks where victims believe they are interacting with a trusted Taguette instance but are redirected to a malicious site designed to steal credentials or deliver malware. This issue is fixed in version 1.5.2."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+                "baseScore": 5.4,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "REQUIRED",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "LOW",
+                "integrityImpact": "LOW",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 2.8,
+              "impactScore": 2.5
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-601"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/remram44/taguette/commit/67de2d2612e7e2572c61cd9627f89c2bfd0f2a36",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/remram44/taguette/security/advisories/GHSA-5923-r76v-mprm",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67503",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-10T00:16:11.777",
+        "lastModified": "2025-12-10T00:16:11.777",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: This CVE is a duplicate of another CVE."
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67485",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-10T01:15:52.137",
+        "lastModified": "2025-12-10T01:15:52.137",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "mad-proxy is a Python-based HTTP/HTTPS proxy server for detection and blocking of malicious web activity using custom security policies. Versions 0.3 and below allow attackers to bypass HTTP/HTTPS traffic interception rules, potentially exposing sensitive traffic. This issue does not have a fix at the time of publication."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                "baseScore": 5.3,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "LOW",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 3.9,
+              "impactScore": 1.4
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-693"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/machphy/mad-proxy/security/advisories/GHSA-wx63-35hw-2482",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67506",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-10T01:15:52.293",
+        "lastModified": "2025-12-10T01:15:52.293",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "PipesHub is a fully extensible workplace AI platform for enterprise search and workflow automation. Versions prior to 0.1.0-beta expose POST /api/v1/record/buffer/convert through missing authentication. The endpoint accepts a file upload and converts it to PDF via LibreOffice by uploading payload to os.path.join(tmpdir, file.filename) without normalizing the filename. An attacker can submit a crafted filename containing ../ sequences to write arbitrary files anywhere the service account has permission, enabling remote file overwrite or planting malicious code. This issue is fixed in version 0.1.0-beta."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "baseScore": 9.8,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 3.9,
+              "impactScore": 5.9
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-22"
+              },
+              {
+                "lang": "en",
+                "value": "CWE-434"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/pipeshub-ai/pipeshub-ai/commit/987ebab40a1fc39956730ed93220f7f9b2c4e5f8",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/pipeshub-ai/pipeshub-ai/security/advisories/GHSA-w398-9m55-2357",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67507",
+        "sourceIdentifier": "security-advisories@github.com",
+        "published": "2025-12-10T01:15:52.463",
+        "lastModified": "2025-12-10T01:15:52.463",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Filament is a collection of full-stack components for accelerated Laravel development. Versions 4.0.0 through 4.3.0 contain a flaw in the handling of recovery codes for app-based multi-factor authentication, allowing the same recovery code to be reused indefinitely. This issue does not affect email-based MFA. It also only applies when recovery codes are enabled. This issue is fixed in version 4.3.1."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "baseScore": 8.1,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "HIGH",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 2.2,
+              "impactScore": 5.9
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-287"
+              },
+              {
+                "lang": "en",
+                "value": "CWE-288"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/filamentphp/filament/commit/87ff60ad9b6e16d4e14ee36a220b8917dd7b0815",
+            "source": "security-advisories@github.com"
+          },
+          {
+            "url": "https://github.com/filamentphp/filament/security/advisories/GHSA-pvcv-q3q7-266g",
+            "source": "security-advisories@github.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-13613",
+        "sourceIdentifier": "security@wordfence.com",
+        "published": "2025-12-10T03:15:46.250",
+        "lastModified": "2025-12-10T03:15:46.250",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The Elated Membership plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.2. This is due to the plugin not properly logging in a user with the data that was previously verified through the 'eltdf_membership_check_facebook_user' and the 'eltdf_membership_login_user_from_social_network' function. This makes it possible for unauthenticated attackers to log in as administrative users, as long as they have an existing account on the site which can easily be created by default through the temp user functionality, and access to the administrative user's email."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security@wordfence.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "baseScore": 9.8,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 3.9,
+              "impactScore": 5.9
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security@wordfence.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-289"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://themeforest.net/item/esmarts-a-modern-education-and-lms-theme/20987760",
+            "source": "security@wordfence.com"
+          },
+          {
+            "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/f15dbce4-2e94-4735-b62b-e32d923c51ce?source=cve",
+            "source": "security@wordfence.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-13677",
+        "sourceIdentifier": "security@wordfence.com",
+        "published": "2025-12-10T04:15:57.843",
+        "lastModified": "2025-12-10T04:15:57.843",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The Simple Download Counter plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 2.2.2. This is due to insufficient path validation in the `simple_download_counter_parse_path()` function. This makes it possible for authenticated attackers, with Administrator-level access and above, to read the contents of arbitrary files on the server, which may contain sensitive information such as database credentials (wp-config.php) or system files. Please note that the vendor opted to continue to allow remote file downloads from arbitrary locations on the server, however, has disabled this functionality on multi-sites and provided a warning to site owners in the readme.txt when they install the plugin. While not an optimal patch, we have considered this sufficient and recommend users proceed to use the plugin with caution."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security@wordfence.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+                "baseScore": 4.9,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "HIGH",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 1.2,
+              "impactScore": 3.6
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security@wordfence.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-22"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://plugins.trac.wordpress.org/browser/simple-download-counter/tags/2.2.2/inc/functions-admin.php#L566",
+            "source": "security@wordfence.com"
+          },
+          {
+            "url": "https://plugins.trac.wordpress.org/browser/simple-download-counter/trunk/inc/functions-admin.php#L566",
+            "source": "security@wordfence.com"
+          },
+          {
+            "url": "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3409876%40simple-download-counter&new=3409876%40simple-download-counter&sfp_email=&sfph_mail=",
+            "source": "security@wordfence.com"
+          },
+          {
+            "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/b82a0f71-29d7-469a-8c69-5ab68d599cb9?source=cve",
+            "source": "security@wordfence.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67605",
+        "sourceIdentifier": "psirt@fortinet.com",
+        "published": "2025-12-10T04:15:58.077",
+        "lastModified": "2025-12-10T04:15:58.077",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: Not used"
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67606",
+        "sourceIdentifier": "psirt@fortinet.com",
+        "published": "2025-12-10T04:15:58.140",
+        "lastModified": "2025-12-10T04:15:58.140",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: Not used"
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67607",
+        "sourceIdentifier": "psirt@fortinet.com",
+        "published": "2025-12-10T04:15:58.210",
+        "lastModified": "2025-12-10T04:15:58.210",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: Not used"
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67608",
+        "sourceIdentifier": "psirt@fortinet.com",
+        "published": "2025-12-10T04:15:58.270",
+        "lastModified": "2025-12-10T04:15:58.270",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: Not used"
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67609",
+        "sourceIdentifier": "psirt@fortinet.com",
+        "published": "2025-12-10T04:15:58.340",
+        "lastModified": "2025-12-10T04:15:58.340",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: Not used"
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67610",
+        "sourceIdentifier": "psirt@fortinet.com",
+        "published": "2025-12-10T04:15:58.403",
+        "lastModified": "2025-12-10T04:15:58.403",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: Not used"
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67611",
+        "sourceIdentifier": "psirt@fortinet.com",
+        "published": "2025-12-10T04:15:58.463",
+        "lastModified": "2025-12-10T04:15:58.463",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: Not used"
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67612",
+        "sourceIdentifier": "psirt@fortinet.com",
+        "published": "2025-12-10T04:15:58.527",
+        "lastModified": "2025-12-10T04:15:58.527",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: Not used"
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-67613",
+        "sourceIdentifier": "psirt@fortinet.com",
+        "published": "2025-12-10T04:15:58.593",
+        "lastModified": "2025-12-10T04:15:58.593",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: Not used"
+          }
+        ],
+        "metrics": {},
+        "references": []
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-9056",
+        "sourceIdentifier": "907edf6c-bf03-423e-ab1a-8da27e1aa1ea",
+        "published": "2025-12-10T04:15:58.667",
+        "lastModified": "2025-12-10T06:15:46.020",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Unprotected service in the AudioLink component allows a local attacker to overwrite system files via unauthorized service invocation."
+          }
+        ],
+        "metrics": {},
+        "weaknesses": [
+          {
+            "source": "907edf6c-bf03-423e-ab1a-8da27e1aa1ea",
+            "type": "Secondary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-863"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://security.tecno.com/SRC/securityUpdates",
+            "source": "907edf6c-bf03-423e-ab1a-8da27e1aa1ea"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-13339",
+        "sourceIdentifier": "security@wordfence.com",
+        "published": "2025-12-10T05:16:02.200",
+        "lastModified": "2025-12-10T05:16:02.200",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The Hippoo Mobile App for WooCommerce plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 1.7.1 via the template_redirect() function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security@wordfence.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                "baseScore": 7.5,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 3.9,
+              "impactScore": 3.6
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security@wordfence.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-22"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://plugins.trac.wordpress.org/changeset/3412701/",
+            "source": "security@wordfence.com"
+          },
+          {
+            "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/06900b4b-6607-4b25-b4bc-2e2906160421?source=cve",
+            "source": "security@wordfence.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-13072",
+        "sourceIdentifier": "contact@wpscan.com",
+        "published": "2025-12-10T06:15:45.320",
+        "lastModified": "2025-12-10T06:15:45.320",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The HandL UTM Grabber / Tracker WordPress plugin before 2.8.1 does not sanitize and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin."
+          }
+        ],
+        "metrics": {},
+        "references": [
+          {
+            "url": "https://wpscan.com/vulnerability/e3795f29-b886-4b92-a7d6-5f5afd7090aa/",
+            "source": "contact@wpscan.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-13073",
+        "sourceIdentifier": "contact@wpscan.com",
+        "published": "2025-12-10T06:15:45.907",
+        "lastModified": "2025-12-10T06:15:45.907",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The HandL UTM Grabber / Tracker WordPress plugin before 2.8.1 does not sanitize and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin"
+          }
+        ],
+        "metrics": {},
+        "references": [
+          {
+            "url": "https://wpscan.com/vulnerability/697fc4be-782c-44cc-840a-774c8ab3ccd8/",
+            "source": "contact@wpscan.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-9571",
+        "sourceIdentifier": "f45cbf4e-4146-4068-b7e1-655ffc2c548c",
+        "published": "2025-12-10T07:15:57.820",
+        "lastModified": "2025-12-10T07:15:57.820",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A remote code execution (RCE) vulnerability exists in Google Cloud Data Fusion.\nA user with permissions to upload artifacts to a Data Fusion instance can execute arbitrary code within the core AppFabric component. \nThis could allow the attacker to gain control over the Data Fusion instance, potentially leading to unauthorized access to sensitive data, modification of data pipelines, and exploration of the underlying infrastructure.\n\nThe following CDAP versions include the necessary update to protect against this vulnerability:  *   6.10.6+\n  *  6.11.1+\n\n\n\n Users must immediately upgrade to them, or greater ones, available at:  https://github.com/cdapio/cdap-build/releases ."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "f45cbf4e-4146-4068-b7e1-655ffc2c548c",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:Red",
+                "baseScore": 8.7,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "LOW",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "HIGH",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "RED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "f45cbf4e-4146-4068-b7e1-655ffc2c548c",
+            "type": "Secondary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-502"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://docs.cloud.google.com/support/bulletins#gcp-2025-076",
+            "source": "f45cbf4e-4146-4068-b7e1-655ffc2c548c"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-12952",
+        "sourceIdentifier": "f45cbf4e-4146-4068-b7e1-655ffc2c548c",
+        "published": "2025-12-10T08:16:02.637",
+        "lastModified": "2025-12-10T08:16:02.637",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A privilege escalation vulnerability exists in Google Cloud's Dialogflow CX.\n\nDialogflow agent developers with Webhook editor permission are able to configure Webhooks using Dialogflow service agent access token authentication. \nThis allows the attacker to escalate their privileges from agent-level to project-level, granting them unauthorized access to manage resources in services associated with the project, leading to unexpected costs and resource depletion for the producer project.\n\nA fix was applied on the server side to protect from this vulnerability in February 2025. No customer action is required."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "f45cbf4e-4146-4068-b7e1-655ffc2c548c",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:Clear",
+                "baseScore": 8.7,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "LOW",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "HIGH",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "CLEAR"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "f45cbf4e-4146-4068-b7e1-655ffc2c548c",
+            "type": "Secondary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-269"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://docs.cloud.google.com/dialogflow/docs/release-notes#June_12_2025",
+            "source": "f45cbf4e-4146-4068-b7e1-655ffc2c548c"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-13954",
+        "sourceIdentifier": "vulnerability@ncsc.ch",
+        "published": "2025-12-10T09:15:46.067",
+        "lastModified": "2025-12-10T09:15:46.067",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Hard-coded cryptographic keys in Admin UI of EZCast Pro II version 1.17478.146 allows attackers to bypass authorization checks and gain full access to the admin UI"
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "vulnerability@ncsc.ch",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:Y/R:X/V:X/RE:L/U:X",
+                "baseScore": 9.3,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "ADJACENT",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "HIGH",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "HIGH",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "YES",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "LOW",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "vulnerability@ncsc.ch",
+            "type": "Secondary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-798"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.ncsc.admin.ch/ncsc/en/home/infos-fuer/infos-it-spezialisten/themen/schwachstelle-melden/cvd-cases/cvd-case-1-test.html",
+            "source": "vulnerability@ncsc.ch"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-13955",
+        "sourceIdentifier": "vulnerability@ncsc.ch",
+        "published": "2025-12-10T09:15:46.710",
+        "lastModified": "2025-12-10T09:15:46.710",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Predictable default Wi-Fi Password in Access Point functionality in EZCast Pro II version 1.17478.146 allows attackers in Wi-Fi range to gain access to the dongle by calculating the default password from observable device identifiers"
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "vulnerability@ncsc.ch",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:Y/R:X/V:X/RE:L/U:X",
+                "baseScore": 9.3,
+                "baseSeverity": "CRITICAL",
+                "attackVector": "ADJACENT",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "HIGH",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "YES",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "LOW",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "vulnerability@ncsc.ch",
+            "type": "Secondary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-330"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.ncsc.admin.ch/ncsc/en/home/infos-fuer/infos-it-spezialisten/themen/schwachstelle-melden/cvd-cases/cvd-case-1-test.html",
+            "source": "vulnerability@ncsc.ch"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-14082",
+        "sourceIdentifier": "secalert@redhat.com",
+        "published": "2025-12-10T09:15:46.857",
+        "lastModified": "2025-12-10T09:15:46.857",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A flaw was found in Keycloak Admin REST (Representational State Transfer) API. This vulnerability allows information disclosure of sensitive role metadata via insufficient authorization checks on the /admin/realms/{realm}/roles endpoint."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "secalert@redhat.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N",
+                "baseScore": 2.7,
+                "baseSeverity": "LOW",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "HIGH",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "LOW",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "exploitabilityScore": 1.2,
+              "impactScore": 1.4
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "secalert@redhat.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-284"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://access.redhat.com/security/cve/CVE-2025-14082",
+            "source": "secalert@redhat.com"
+          },
+          {
+            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2419078",
+            "source": "secalert@redhat.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-14087",
+        "sourceIdentifier": "secalert@redhat.com",
+        "published": "2025-12-10T09:15:47.053",
+        "lastModified": "2025-12-10T09:15:47.053",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A flaw was found in GLib (Gnome Lib). This vulnerability allows a remote attacker to cause heap corruption, leading to a denial of service or potential code execution via a buffer-underflow in the GVariant parser when processing maliciously crafted input strings."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "secalert@redhat.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                "baseScore": 5.6,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "HIGH",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "LOW",
+                "integrityImpact": "LOW",
+                "availabilityImpact": "LOW"
+              },
+              "exploitabilityScore": 2.2,
+              "impactScore": 3.4
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "secalert@redhat.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-190"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://access.redhat.com/security/cve/CVE-2025-14087",
+            "source": "secalert@redhat.com"
+          },
+          {
+            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2419093",
+            "source": "secalert@redhat.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-1161",
+        "sourceIdentifier": "iletisim@usom.gov.tr",
+        "published": "2025-12-10T09:15:47.230",
+        "lastModified": "2025-12-10T09:15:47.230",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Incorrect Use of Privileged APIs vulnerability in NomySost Information Technology Training and Consulting Inc. Nomysem allows Privilege Escalation.This issue affects Nomysem: through May 2025."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "iletisim@usom.gov.tr",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+                "baseScore": 7.1,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "HIGH",
+                "privilegesRequired": "LOW",
+                "userInteraction": "REQUIRED",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 1.2,
+              "impactScore": 5.9
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "iletisim@usom.gov.tr",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-648"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.usom.gov.tr/bildirim/tr-25-0440",
+            "source": "iletisim@usom.gov.tr"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-66004",
+        "sourceIdentifier": "meissner@suse.de",
+        "published": "2025-12-10T09:15:47.427",
+        "lastModified": "2025-12-10T09:15:47.427",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A Path Traversal vulnerability in usbmuxd allows local users to escalate to the service user.This issue affects usbmuxd: before 3ded00c9985a5108cfc7591a309f9a23d57a8cba."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "meissner@suse.de",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:L/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 5.1,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "LOCAL",
+                "attackComplexity": "LOW",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "NONE",
+                "vulnIntegrityImpact": "LOW",
+                "vulnAvailabilityImpact": "LOW",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "LOW",
+                "subAvailabilityImpact": "LOW",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ],
+          "cvssMetricV31": [
+            {
+              "source": "meissner@suse.de",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:L",
+                "baseScore": 5.7,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "LOCAL",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "scope": "CHANGED",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "LOW",
+                "availabilityImpact": "LOW"
+              },
+              "exploitabilityScore": 2.5,
+              "impactScore": 2.7
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "meissner@suse.de",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-35"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://bugzilla.suse.com/show_bug.cgi?id=CVE-2025-66004",
+            "source": "meissner@suse.de"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-9315",
+        "sourceIdentifier": "psirt@moxa.com",
+        "published": "2025-12-10T09:15:47.867",
+        "lastModified": "2025-12-10T09:15:47.867",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "An unauthenticated device registration vulnerability, caused by Improperly Controlled Modification of Dynamically-Determined Object Attributes, has been identified in the MXsecurity Series. An unauthenticated remote attacker can exploit this vulnerability by sending a specially crafted JSON payload to the device's registration endpoint /api/v1/devices/register, allowing the attacker to register unauthorized devices without authentication. Although exploiting this vulnerability has limited modification of data, there is no impact to the confidentiality and availability of the affected device, as well as no loss of confidentiality, integrity, and availability within any subsequent systems."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "psirt@moxa.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 6.3,
+                "baseSeverity": "MEDIUM",
+                "attackVector": "NETWORK",
+                "attackComplexity": "HIGH",
+                "attackRequirements": "NONE",
+                "privilegesRequired": "NONE",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "NONE",
+                "vulnIntegrityImpact": "LOW",
+                "vulnAvailabilityImpact": "NONE",
+                "subConfidentialityImpact": "NONE",
+                "subIntegrityImpact": "NONE",
+                "subAvailabilityImpact": "NONE",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "psirt@moxa.com",
+            "type": "Secondary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-915"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.moxa.com/en/support/product-support/security-advisory/mpsa-252631-cve-2025-9315-unauthenticated-device-registration-vulnerability-in-mxsecurity-series",
+            "source": "psirt@moxa.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-14390",
+        "sourceIdentifier": "security@wordfence.com",
+        "published": "2025-12-10T10:16:01.823",
+        "lastModified": "2025-12-10T10:16:01.823",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The Video Merchant plugin for WordPress is vulnerable to Cross-Site Request Forgery in version <= 5.0.4. This is due to missing or incorrect nonce validation on the video_merchant_add_video_file() function. This makes it possible for unauthenticated attackers to upload arbitrary files that make remote code execution possible via a forged request granted they can trick a site administrator into performing an action such as clicking on a link."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "security@wordfence.com",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "baseScore": 8.8,
+                "baseSeverity": "HIGH",
+                "attackVector": "NETWORK",
+                "attackComplexity": "LOW",
+                "privilegesRequired": "NONE",
+                "userInteraction": "REQUIRED",
+                "scope": "UNCHANGED",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "availabilityImpact": "HIGH"
+              },
+              "exploitabilityScore": 2.8,
+              "impactScore": 5.9
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "security@wordfence.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-434"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://wordpress.org/plugins/video-merchant",
+            "source": "security@wordfence.com"
+          },
+          {
+            "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/7cbe39ae-d10b-432f-afab-682948de2521?source=cve",
+            "source": "security@wordfence.com"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-66675",
+        "sourceIdentifier": "security@apache.org",
+        "published": "2025-12-10T10:16:02.170",
+        "lastModified": "2025-12-10T10:16:02.170",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Denial of Service vulnerability in Apache Struts, file leak in multipart request processing causes disk exhaustion.\n\nThis issue affects Apache Struts: from 2.0.0 through 6.7.4, from 7.0.0 through 7.0.3.\n\nUsers are recommended to upgrade to version 6.8.0 or 7.1.1, which fixes the issue.\n\nIt's related to  https://cve.org/CVERecord?id=CVE-2025-64775  - this CVE addresses missing affected version 6.7.4"
+          }
+        ],
+        "metrics": {},
+        "weaknesses": [
+          {
+            "source": "security@apache.org",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-459"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://cve.org/CVERecord?id=CVE-2025-64775",
+            "source": "security@apache.org"
+          },
+          {
+            "url": "https://cwiki.apache.org/confluence/display/WW/S2-068",
+            "source": "security@apache.org"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-7073",
+        "sourceIdentifier": "cve-requests@bitdefender.com",
+        "published": "2025-12-10T10:16:02.330",
+        "lastModified": "2025-12-10T10:16:02.330",
+        "vulnStatus": "Received",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A local privilege escalation vulnerability in Bitdefender Total Security 27.0.46.231 allows low-privileged attackers to elevate privileges. The issue arises from bdservicehost.exe deleting files from a user-writable directory (C:\\ProgramData\\Atc\\Feedback) without proper symbolic link validation, enabling arbitrary file deletion. This issue is chained with a file copy operation during network events and a filter driver bypass via DLL injection to achieve arbitrary file copy and code execution as elevated user."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV40": [
+            {
+              "source": "cve-requests@bitdefender.com",
+              "type": "Secondary",
+              "cvssData": {
+                "version": "4.0",
+                "vectorString": "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                "baseScore": 8.8,
+                "baseSeverity": "HIGH",
+                "attackVector": "LOCAL",
+                "attackComplexity": "HIGH",
+                "attackRequirements": "PRESENT",
+                "privilegesRequired": "LOW",
+                "userInteraction": "NONE",
+                "vulnConfidentialityImpact": "HIGH",
+                "vulnIntegrityImpact": "HIGH",
+                "vulnAvailabilityImpact": "HIGH",
+                "subConfidentialityImpact": "HIGH",
+                "subIntegrityImpact": "HIGH",
+                "subAvailabilityImpact": "HIGH",
+                "exploitMaturity": "NOT_DEFINED",
+                "confidentialityRequirement": "NOT_DEFINED",
+                "integrityRequirement": "NOT_DEFINED",
+                "availabilityRequirement": "NOT_DEFINED",
+                "modifiedAttackVector": "NOT_DEFINED",
+                "modifiedAttackComplexity": "NOT_DEFINED",
+                "modifiedAttackRequirements": "NOT_DEFINED",
+                "modifiedPrivilegesRequired": "NOT_DEFINED",
+                "modifiedUserInteraction": "NOT_DEFINED",
+                "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+                "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+                "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+                "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+                "modifiedSubIntegrityImpact": "NOT_DEFINED",
+                "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+                "Safety": "NOT_DEFINED",
+                "Automatable": "NOT_DEFINED",
+                "Recovery": "NOT_DEFINED",
+                "valueDensity": "NOT_DEFINED",
+                "vulnerabilityResponseEffort": "NOT_DEFINED",
+                "providerUrgency": "NOT_DEFINED"
+              }
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "cve-requests@bitdefender.com",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-59"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.bitdefender.com/support/security-advisories/local-privilege-escalation-via-arbitrary-file-operation-in-bitdefender-atc-va-12590",
+            "source": "cve-requests@bitdefender.com"
+          }
+        ]
+      }
+    }
+  ]
+}

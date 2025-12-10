@@ -17,7 +17,7 @@
 
 # Project 2 – CVE Database + NLP + FastAPI UI
 
-**Student:** YOUR NAME  
+**Student:** Adnan Akhtar (LCS2022001), Asitiva shrivasta (LCS2022004) ,Manish Rawat (LCS2022028) , Manjeet Kumar(LCS2022029)  
 **Course:** NLP Lab – Project 2
 
 ## 1. Objective
