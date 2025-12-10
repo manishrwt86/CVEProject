@@ -6,6 +6,9 @@
 2. Install:
    pip install -r requirements.txt
    python -m spacy download en_core_web_sm
+
+   pip install -r server/requirements.txt
+
 3. Fetch CVEs:
    python fetch_nvd.py
 4. Parse & store:
@@ -17,7 +20,7 @@
 
 # Project 2 – CVE Database + NLP + FastAPI UI
 
-**Student:** Adnan Akhtar (LCS2022001), Asitiva shrivasta (LCS2022004) ,Manish Rawat (LCS2022028) , Manjeet Kumar(LCS2022029)  
+**Student:** Pindiproli Naga Sai Anurag (LCI2022038), Adnan Akhtar (LCS2022001), Asitiva shrivasta (LCS2022004) ,Manish Rawat (LCS2022028) , Manjeet Kumar(LCS2022029)  
 **Course:** NLP Lab – Project 2
 
 ## 1. Objective
