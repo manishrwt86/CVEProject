@@ -1,0 +1,4 @@
+/.venv
+/analysis/attack_vectors.csv
+/analysis/impact_categories.csv
+/reports/severity_eval.csv
