@@ -92,6 +92,48 @@ async function showCVE(id) {
   container.innerHTML = html;
 }
 
+// --- Add this near the top of server/static/app.js (after showCVE or anywhere global) ---
+window.findCVE = async function () {
+  try {
+    const input = document.getElementById("cveInput");
+    if (!input) {
+      alert("CVE input element not found in DOM.");
+      console.error("findCVE: cveInput element missing");
+      return;
+    }
+    const id = input.value.trim();
+    if (!id) {
+      alert("Please enter a CVE ID (e.g. CVE-2025-12345)");
+      return;
+    }
+    console.log("findCVE called for:", id);
+
+    // call your existing showCVE (which will render the result)
+    if (typeof showCVE === "function") {
+      await showCVE(id);
+    } else {
+      // fallback: fetch directly and render minimal info
+      const res = await fetch("/api/cve/" + encodeURIComponent(id));
+      if (!res.ok) {
+        const txt = await res.text().catch(() => "");
+        alert("Error fetching CVE: " + res.status + " — " + txt);
+        console.error("findCVE fetch error:", res.status, txt);
+        return;
+      }
+      const data = await res.json();
+      const container = document.getElementById("results");
+      container.innerHTML = `<h3>${data.id}</h3>
+        <p><strong>Published:</strong> ${data.published || ""} 
+        <strong>CVSS:</strong> ${data.cvss_v3_score || ""}</p>
+        <p>${data.summary || ""}</p>
+        <pre>${JSON.stringify(data.raw || {}, null, 2)}</pre>`;
+    }
+  } catch (err) {
+    console.error("findCVE unexpected error:", err);
+    alert("Unexpected error in findCVE: " + (err.message || err));
+  }
+};
+
 async function showStats() {
   const res = await fetch("/api/stats/summary");
   const data = await res.json();
